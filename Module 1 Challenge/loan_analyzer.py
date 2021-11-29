@@ -208,6 +208,13 @@ output_path = Path("inexpensive_loans.csv")
 # YOUR CODE HERE!
 
 # This write_inexpensive_loan_values function defines two ways to write dictionary to file: 1. Using csv.DictWriter object (by default); 2. Using csv.writer object
+# 1. Input parameters: 
+    # a. inexpensive_loans - List of dictionaries, list of dictionaries with the info about loans 
+    # b. path - Path object, path to the output file to write data 
+    # c. header - List, list of headers for columns in the output file 
+    # d. withDictWriter - Boolean, the way to write the data to the file. 
+    #   * True value (default) represents using csv.DictWriter object that accepts header as a parameter and has a separate writeheader() method to write the header. writerows() allows to write all dictionaries in the list to the file at once without a need to iterate through the list. 
+    #   * False value represents using csv.writer object. Using this way assumes a call of writerow() method for the header. To write the data to the file the iteration through the list of dictionaries and getting the values of dictionaries are required
 def write_inexpensive_loan_values(inexpensive_loans, path, header, withDictWriter = True):
     with open(output_path, 'w', newline='') as csvfile:
         if withDictWriter:
