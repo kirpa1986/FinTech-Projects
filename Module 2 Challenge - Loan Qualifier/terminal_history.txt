@@ -1,0 +1,50 @@
+  139  python test.py 
+  140  python test.py 
+  141  python app.py 
+  142  python app.py 
+  143  python app.py 
+  144  python app.py 
+  145  python app.py 
+  146  python app.py 
+  147  python app.py 
+  148  python app.py 
+  149  python app.py 
+  150  python app.py 
+  151  clear
+  152  clear
+  153  python app.py 
+  154  python app.py 
+  155  python app.py 
+  156  git status
+  157  git add -A
+  158  git status
+  159  git restore --staged 
+  160  git restore --staged -A
+  161  git restore --staged .
+  162  git status
+  163  git add -A
+  164  git commit -m "1. Added py files with the current logic 2. Added save_qualifying_loans logic to app.py 3. Added README and .gitignore file"
+  165  git push origin main
+  166  git remote
+  167  git log
+  168  git log pretty=oneline
+  169  git log --pretty=oneline
+  170  git log --pretty=oneline --graph 
+  171  git log  --graph 
+  172  git log --pretty=format: "%h %s" --graph 
+  173  git log --pretty=format:"%h %s" --graph 
+  174  git log --pretty=format:"%h %s" --graph 
+  175  python app.py 
+  176  git add README.md 
+  177  git commit -m "Adding more info to  REAME file"
+  178  git push
+  179  git status
+  180  git add static/
+  181  git status
+  182  git commit -m "Adding static folder and one picture that is used in README"
+  183  git push
+  184  git log
+  185  git log --pretty=format:"%h %s"
+  186  python app.py 
+  187  ls data/Results/
+  188  history 50 > terminal_history.txt
