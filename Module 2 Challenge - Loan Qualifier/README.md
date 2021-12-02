@@ -5,7 +5,7 @@
 * **[Credit Score](https://www.investopedia.com/terms/c/credit_score.asp)**: a number that represents creditworthiness based on credit history.
 * **[Gross monthly income](https://www.investopedia.com/terms/g/grossincome.asp)**: all the monthly income that you earn before taxes.
 * **[Debt-to-income (DTI) ratio](https://www.investopedia.com/terms/d/dti.asp)**: a comparison of how much you owe to how much you earn per month.
-* **[Loan-to-value (LTV) ratio]()**: this ratio compares the amount of the loan that you're asking for to the appraised value of the item that you want to buy.
+* **[Loan-to-value (LTV) ratio](https://www.investopedia.com/terms/l/loantovalue.asp#:~:text=An%20LTV%20ratio%20is%20calculated,payment%2C%20you%20will%20borrow%20%2490%2C000.)**: this ratio compares the amount of the loan that you're asking for to the appraised value of the item that you want to buy.
 
 ---
 
