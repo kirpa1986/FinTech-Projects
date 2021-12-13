@@ -8,6 +8,11 @@ This analysis shows the arbitrage opportunities for Bitcoin in early 2018 based 
 ## Analysis outcomes
 The results of this analysis shows that there were a pretty significant arbitrage opportunities in January 2018 with a sizable spread spike on January 28 2018. Also data analysis and visualisations show that after that spike the arbitrage opportunities significantly decreased reducing the possible profit to 0 in February - April. 
 
+![<Bitstamp vs Coinbase Bitcoin Close Prices>](static/pics/coinbase_vs_bitstamp_Jan-Apr_2018.PNG)
+
+![<Profit per Trade on January 28 2018>](static/pics/profit_per_trade_01282018.PNG)
+
+
 ---
 
 ## Technologies
