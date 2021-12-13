@@ -28,6 +28,3 @@ Brought to you by [Kirill Panov](https://www.linkedin.com/in/kirill-panov-696455
 
 ---
 
-## License
-
-MIT
