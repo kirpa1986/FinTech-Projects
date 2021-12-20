@@ -1,6 +1,6 @@
 # Retirement Portfolios Analysis
 
-This portfolio analysis aims to calculate of 'whale' fund portfolio is better investment option with a greater investment potential based on the following key risk-management metriks:
+This portfolio analysis aims to calculate which 'whale' fund portfolio is the best investment option with a greater investment potential based on the following key risk-management indicators:
 * [daily returns](https://scripbox.com/pf/stock-return/)
 * [standard deviation](https://www.investopedia.com/terms/s/standarddeviation.asp)
 * [Sharpe ratio](https://www.investopedia.com/terms/s/sharperatio.asp)
