@@ -11,3 +11,4 @@ Please feel free to explore the projects and the codebase:
 3. [Module 3 Challenge - Arbitrage Opportunities](Module%203%20Challenge%20-%20Arbitrage%20Opportunities)
 4. [Module 4 Challenge - Portfolio Analysis](Module%204%20Challenge%20-%20Portfolio%20Analysis)
 5. [Module 5 Challenge - Financial Planning Tools](Module%205%20Challenge%20-%20Fin%20Planning%20Tools)
+6. [Module 6 Challenge - San Francisco Real Estate](Module%206%20Challenge%20-%20SF%20Real-estate)
