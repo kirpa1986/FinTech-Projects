@@ -15,4 +15,5 @@ Please feel free to explore the projects and the codebase:
 7. [Module 7 Challenge - ETF Analyzer](Module%207%20Challenge%20-%20ETF%20Analyzer)
 8. [Module 10 Challenge - Crypto Portfolio Clustering](Module%2010%20Challenge%20-%20Crypto%20Portfolio%20Clustering)
 9. [Module 11 Challenge - Financial and User Data Analysis](Module%2011%20Challenge%20-%20Financial%20and%20User%20Data%20Analysis)
-10.[Module 12 Challenge - Credit Risk Classification](Module%2012%20Challange%20-%20Credit%20Risk%20Classification) 
+10. [Module 12 Challenge - Credit Risk Classification](Module%2012%20Challange%20-%20Credit%20Risk%20Classification) 
+11. [Module 13 Challenge - Venture Funding with Deep Learning](Module%2013%20Challenge%20-%20Venture%20Funding%20with%20Deep%20Learning)
