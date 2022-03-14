@@ -1,8 +1,10 @@
-# Venture Funding with Deep Learning
+# ML Trading Bot
 
-This project aims to anayze startups and build models to predict their potential sucess based on the applicants data. The data (CSV file) contains more than 34000 companies that have received funding from Alphabet Soup - a venture capital firm. The analysis uses depp networks to build binary classifier models that will predict whether an applicant will become a successful business.
+This project aims to anayze the trading strategy based on different ML classifying models and to create an algorithmic trading bot that learns and adapts to new data and evolving markets. 
+
 
 ---
+
 
 ## Technologies
 
@@ -10,10 +12,6 @@ This analysis is prepared in Jupyter Notebook using python 3.8 and the rich feat
 
 [**scikit-learn**](https://scikit-learn.org/stable/index.html) that is open source library with a huge number of simple and efficient tools for predictive data analysis. The scikit-learn library categorizes the machine learning models into different groups, which it calls modules.Each group of functions implements different machine learning techniques. 
 
-[**TensorFlow**](https://www.tensorflow.org/) is an open source machine learning framework for all developers. It is used for implementing machine learning and deep learning applications.
-
-
-[Kerras](https://www.tensorflow.org/api_docs/python/tf/keras) is compact, easy to learn, high-level Python library run on top of TensorFlow framework. It is made with focus of understanding deep learning techniques
 
 ---
 ## Installation Guide
@@ -23,26 +21,86 @@ Before running the application first install the following dependencies (some of
 ```python
 conda install scikit-learn (it will also install all required dependencies)
 
-conda install -c conda-forge tensorflow (it will also install all required dependencies, including Keras)
 ```
 
 ---
 
 ## Outcomes
 
-This analysis builds 3 models. To optimize models the following optimization techniques are used:
-To optimize your model for a predictive accuracy as close to 1 as possible, you can use any or all of the following techniques:
+This analysis uses several models to predict trading ourcomes and identify the best one:
+1. Baseline model - **SVC classifier** from **Support Vector Machine (SVM)** learning method with 3 months as an offset. The parameters for the baseline model are the following:
 
-* Adjusting the input data by dropping different features columns to ensure that no variables or outliers confuse the model.
-* Add more neurons (nodes) to a hidden layer.
-* Add more hidden layers.
-* Add to or reduce the number of epochs in the training regimen.
+    * Training data - 3 momths
+    * Window for Fast SMA - 4
+    * Window for Long SMA - 100
+
+    Classification report for the baseline model:
+    ![<baseline_report>](./Output/baseline_report.png)
+
+    Strategy returns vs. Actual returns plot for baseline model:
+    ![<baseline_plot>](./Output/baseline_model_plot.png)
+
+2. Alternative Baseline model (SVC) 1 - baseline model adjusted with the following parameters:
+
+    * Training data - 6 momths
+    * Window for Fast SMA - 4
+    * Window for Long SMA - 100
+
+    Classification report for the Alternative Baseline model 1:
+    ![<baseline_6M_report>](./Output/alt(train)_report.png)
+    Strategy returns vs. Actual returns plot for Alternative baseline model 1:
+    ![<baseline_6M_plot>](./Output/alt_model(train_6M)_plot.png)
+
+
+3. Alternative Baseline model (SVC) 2 - baseline model adjusted with the following parameters:
+
+    * Training data - 3 momths
+    * Window for Fast SMA - 20
+    * Window for Long SMA - 200
+
+    Classification report for the Alternative Baseline model 2:
+    ![<baseline_SMA_20_200_report>](./Output/alt(SMA_20_200)_report.png)
+    Strategy returns vs. Actual returns plot for Alternative baseline model 2:
+    ![<baseline_6M_plot>](./Output/alt_model(SMA_20_200)_plot.png)
+
+4. Alternative model 3 - built with **LogisticRegression** classifier 
+
+    * Training data - 3 momths
+    * Window for Fast SMA - 20
+    * Window for Long SMA - 200
+
+    Classification report for the Alternative Baseline model 3:
+    ![<alt_tree_report>](./Output/alt(log_reg)_report.png)
+    Strategy returns vs. Actual returns plot for Alternative baseline model 2:
+    ![<alt_tree_plot>](./Output/alt_model(dec_tree)_plot.png)
+
+
+5. Alternative model 4 - built with **DecisionTreeClassifier**
+
+    * Training data - 3 momths
+    * Window for Fast SMA - 20
+    * Window for Long SMA - 200
+
+    Classification report for the Alternative Baseline model 3:
+    ![<alt_log_reg_report>](./Output/alt(dec_tree)_report.png)
+    Strategy returns vs. Actual returns plot for Alternative baseline model 2:
+    ![<alt_log_reg_plot>](./Output/alt_model(log_reg)_plot.png)
+
+
+**Results:**
+
+Classification report and plots above show that the Baseline SVM model and Alternative Baseline model 1 (with increased size of the training dataset) made trading decisions that outperformed the actual returns in some market scenarios, as illustrated by the steep rise in the *trading_algorithm_returns* plot line.
+
+Alternative Baseline Model 2 (with changed SMA window sizes) made training decisions that mostly underperformed the actual results. 
+
+Two other models that were built using LogisticRegression and DecisionTreeClassifier don't show any improvements compared with the Baseline Model. 
+
 
 
 ---
 ## Usage
 
-To use the project simply clone the repository and open the **venture_funding_with_deep_learning.ipynb** file in Jupyter Notebook. 
+To use the project simply clone the repository and open the **machine_learning_trading_bot.ipynb** file in Jupyter Notebook. 
 
 
 ## Contributors
