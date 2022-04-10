@@ -8,7 +8,7 @@ The main purpose of this project is to build a blockchain-based ledger system, c
 
 1. [**Streamlit**](https://streamlit.io/) is an open-source Python library that makes it easy to create and share beautiful, custom web apps
 
-2. **Dataclasses** are used for storing data. DataClasses provides a decorator and functions for automatically adding generated special methods to user-defined classes.
+2. [**Dataclasses**](https://docs.python.org/3/library/dataclasses.html) are classes used for storing data. **DataClasses** provides a decorator and functions for automatically adding generated special methods to user-defined classes.
 
 3. [**Hashlib**](https://docs.python.org/3/library/hashlib.html) is a secure hash and message digest algorithm library.
 
